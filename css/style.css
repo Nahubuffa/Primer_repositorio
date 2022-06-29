@@ -95,7 +95,7 @@ main{
 	height:500px;
 }
 .footer__img--color{
-	background: linear-gradient(to top,rgba(3, 187, 133, 0.7),white);
+	background: linear-gradient(to left,rgba(3, 187, 133, 0.7),white);
 
 }
 .footer__png--float{
