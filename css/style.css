@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&family=Nuosu+SIL&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 100%;
+}
+h1,h2,h3{
+	font-family: 'Fira Sans', sans-serif;
+	color: forestgreen;	
+	font-size: 2rem;
+}
+p{
+	font-family: 'Nuosu SIL', serif;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+nav{
+	background-color: rgba(3, 187, 133, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+	nav ul{
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+	}
+		nav ul li a{
+			margin: 0 5px;
+			font-size: 2rem;
+			text-decoration: none;
+			color: black;
+			font-family: 'Nuosu SIL', serif;
+
+		}	
+body{
+	background-image: url(../imagenes/fondo.png); 	
+	
+}	
+header{
+	opacity: 0.79;
+	display: flex;
+	align-items: center;
+}
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.altura-header{
+	margin-left: 45%;
+	
+}
+
+#encabezado{
+	grid-area: header;
+}
+#centro{
+	grid-area: main;
+}
+#pie{
+	grid-area: footer;
+}
+.box{
+	text-align: center;
+	font-family: 'Nuosu SIL', serif;
+	font-size: 2em;
+}
+.textGrey{
+	color: grey;
+}
+
+.textCenter{
+	text-align: center;
+}
+.nav__lista{
+
+}
+.sect__map{
+	
+}
+.encabezado__img--big{
+	width:200%;
+	height:500px;
+}
+.footer__img--color{
+	background: linear-gradient(to top,rgba(3, 187, 133, 0.7),white);
+
+}
+.footer__png--float{
+
+	overflow-x: hidden;
+}
+.w-25{
+	width: 100%;
+}
+.w-50{
+	width: 50%;
+}
+.w-100{
+	width: 100;
+}
+.h-25{
+	height: 25%;
+}
+.h-50{
+	height: 50%;
+}
+.h-25{
+	height: 100%;
+}
+
+@media only screen and (min-width: 768xp){
+	body{
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: 10vh 80vh 10vh;
+		grid-template-areas: 
+		"navegacion navegacion navegacion"
+		"encabezado encabezado centro"
+		"pie pie pie"}
+}
+@media only screen and (min-width: 1024xp){
+	body{
+		grid-template-columns: 1fr;
+	grid-template-rows: 10vh 40vh 55vh 5vh;
+	grid-template-areas:
+	"navegacion"
+	"encabezado"
+	"centro"
+	"pie";
+	}
+}
